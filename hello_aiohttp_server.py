@@ -1,5 +1,6 @@
 from aiohttp import web
 
+
 class Upper():
     def uppercase(self, string):
         return string.upper()
@@ -7,6 +8,7 @@ class Upper():
 
 async def to_upper(string, worker):
     return worker.uppercase(string)
+
 
 async def echo_loud(request):
     data = await request.json()
