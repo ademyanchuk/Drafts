@@ -1,10 +1,5 @@
 from aiohttp import web
-
-
-class Upper():
-    def uppercase(self, string):
-        return string.upper()
-
+from dummy.dummy_class import Upper
 
 async def to_upper(string, worker):
     return worker.uppercase(string)
